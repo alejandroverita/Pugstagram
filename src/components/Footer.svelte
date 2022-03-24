@@ -4,7 +4,7 @@
 
 <div id="Footer">
     <div class="Footer-container">
-        <p>© {actualYear} Todos los derechos reservados</p>
-        <p>Pugstagram from <strong>Platzi</strong></p>
+        <p class='Footer-rights'>© {actualYear} Todos los derechos reservados</p>
+        <p class='Footer-copy'>Pugstagram from <strong>Platzi</strong></p>
     </div>
 </div>
