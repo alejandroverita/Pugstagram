@@ -1,3 +1,7 @@
+<script>
+    import { likeCount } from '../store/store';
+
+</script>
 <style>
     #Header{
         background: white;
@@ -69,6 +73,7 @@
                 <ul>
                     <li>
                         <i class="fa-solid fa-heart"/>
+                        {$likeCount === 0 ? '' : $likeCount}
                     </li>
                     <li>
                         <i class="fa-solid fa-user"/>

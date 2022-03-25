@@ -6,6 +6,8 @@
     import Modal from './Modal.svelte';
     import Share from './Share.svelte';
 
+    import {likeCount} from '../store/store';
+
     export let username, location, photo, postComment, comments, avatar;
 
     let isModal = false;
@@ -18,6 +20,11 @@
 
     function handleLike() {
         like = !like;
+        if(like){
+            likeCount.update(n => n + 1);
+        } else {
+            likeCount.update(n => n - 1);
+        }
     }
 
     function handleBookmark() {
