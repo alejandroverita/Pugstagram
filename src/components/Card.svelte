@@ -9,9 +9,19 @@
     export let username, location, photo, postComment, comments, avatar;
 
     let isModal = false;
+    let like = false;
+    let bookmark = false;
 
     function handleClick () {
         isModal = !isModal;
+    }
+
+    function handleLike() {
+        like = !like;
+    }
+
+    function handleBookmark() {
+        bookmark = !bookmark;
     }
 
 </script>
@@ -101,7 +111,7 @@
         font-size: 14px;
     }
 
-    /* .active-like {
+    .active-like {
         color: #bc1888;
         animation: bounce linear 0.8s;
         animation-iteration-count: 1;
@@ -110,7 +120,7 @@
 
     .active-bookmark {
         color: #f09433;
-    } */
+    }
 
     @keyframes bounce {
         0% {
@@ -161,17 +171,23 @@
             </div>
         </div>
         <div class="Card-photo">
-            <figure>
+            <figure on:dblclick={handleLike}>
                 <img src={photo} alt={username}>
             </figure>
         </div>
         <div class="Card-icons">
             <div class="Card-icons-first">
-                <i class="fas fa-heart"/>
+                <i class="fas fa-heart"
+                    class:active-like={like}
+                    on:click={handleLike}
+                />
                 <i class="fas fa-paper-plane" on:click={handleClick} />
             </div>
             <div class="Card-icons-second">
-                <i class="fas fa-bookmark"/>
+                <i class="fas fa-bookmark"
+                    class:active-bookmark={bookmark}
+                    on:click={handleBookmark}
+                />
             </div>
         </div>
         <div class="Card-description">
