@@ -16,15 +16,12 @@
 
     function handleClick () {
         isModal = !isModal;
+        console.log(isModal)
     }
 
     function handleLike() {
         like = !like;
-        if(like){
-            likeCount.update(n => n + 1);
-        } else {
-            likeCount.update(n => n - 1);
-        }
+        likeCount.update(n => like ? n+1 : n-1 )
     }
 
     function handleBookmark() {
@@ -158,7 +155,7 @@
 
     {#if isModal}
         <div transition:blur>
-            <Modal>
+            <Modal {isModal} on:click{handleClick}>
                 <Share on:click={handleClick} />
             </Modal>
         </div>

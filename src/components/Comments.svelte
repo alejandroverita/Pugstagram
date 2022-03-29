@@ -61,7 +61,7 @@
         font-size: 12px;
         outline: none;
         width: 100%;
-
+        padding: 0.5em 0 0.5em 0.5em;
     }
 
     .Comments-add button {
@@ -90,11 +90,12 @@
         <div class="Comments-add">
             <form on:submit|preventDefault={addComment}>
                 <input 
-                    type="text"
-                    class="Comments-input"
-                    placeholder="Agregar comentario..."
-                    id="text"
+                type="text"
+                class="Comments-input"
+                placeholder="Agregar comentario..."
+                id="text"
                 />
+
                 <button type="submit">Post</button>
             </form>
         </div>

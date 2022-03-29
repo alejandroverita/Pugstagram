@@ -1,3 +1,11 @@
+<script>
+    const handleClick = ()=> {
+        alert('You have clicked outside')
+    }
+
+    
+</script>
+
 <style>
     #Share {
         border: 1px solid rgba(219, 219, 219, 1);
@@ -51,7 +59,9 @@
 
 
 </style>
-<div id="Share">
+<div id="Share"
+    on:outsideclick={handleClick}
+>
     <div class="Share-head">
         <h2>Compartir</h2>
         <i class="fas fa-times-circle" on:click/>

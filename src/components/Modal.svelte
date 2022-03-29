@@ -1,3 +1,7 @@
+<script>
+
+</script>
+
 <style>
     #Modal {
         position: relative;
@@ -6,18 +10,22 @@
     .Modal-overlay {
         background-color: rgba(0, 0, 0, 0.7);
         position: fixed;
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         z-index: 1;
+        overflow-y: hidden;
+        padding-right: 15px;
         cursor: pointer;
     }
 </style>
 
 <div id="Modal">
-    <div class="Modal-overlay"/>
+    <div 
+        class="Modal-overlay"
+    />
     <slot />
-</div>
+</div>  
