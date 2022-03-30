@@ -17,15 +17,15 @@
         right: 0;
         bottom: 0;
         z-index: 1;
-        overflow-y: hidden;
-        padding-right: 15px;
         cursor: pointer;
+        overflow-y: hidden;
     }
 </style>
 
 <div id="Modal">
     <div 
         class="Modal-overlay"
+
     />
     <slot />
 </div>  
