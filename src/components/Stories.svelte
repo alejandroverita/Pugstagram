@@ -22,7 +22,7 @@
     .Stories-head span {
         font-size: 12px;
         font-weight: normal;
-        color: black;
+        /* color: black; */
     }
 
     .Stories-items{
@@ -53,7 +53,7 @@
 
     .Stories-item h2 {
         font-size: 14px;
-        color: black;
+        /* color: black; */
         margin: 0 0 0 0.5em;
     }
 
@@ -61,7 +61,7 @@
         display: block;
         font-size: 9px;
         text-transform: uppercase;
-        color: gray;
+        /* color: gray; */
     }
 
 </style>

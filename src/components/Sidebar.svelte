@@ -14,7 +14,19 @@
     }
 
     .Sidebar-container {
+        display: grid;
+        grid-template-rows: auto 1 fr auto;
+        gap: 20px;
         position: fixed;
+        max-width: 290px;
+        width: 100%;
+    }
+
+    @media(max-width: 999px){
+        .Sidebar-container{
+            position: static;
+            margin: 0 auto;
+        }
     }
 
 </style>

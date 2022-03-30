@@ -34,7 +34,7 @@
     #Card{
         border: 1px solid rgba(219, 219, 219, 1);
         border-radius: 4px;
-        background-color: white;
+        /* background-color: white; */
         margin: 0 0 2em 0;
     }
 
@@ -61,14 +61,14 @@
         font-size: 14px;
         font-weight: 600;
         margin: 0 0 0 1em;
-        color: black;
+        /* color: black; */
     }
 
     .Card-header-user h2 span {
         display: block;
         font-size: 12px;
         font-weight: normal;
-        color: rgba(38, 38, 38, 0.7);
+        /* color: rgba(38, 38, 38, 0.7); */
     }
 
     .Card-header-settings i {
@@ -108,7 +108,7 @@
     .Card-description h3 {
         font-size: 14px;
         font-weight: bold;
-        color: black;
+        /* color: black; */
     }
 
     .Card-description span {

@@ -31,14 +31,14 @@
 
     .Comments-users h3 {
         font-size: 14px;
-        color: black;
+        /* color: black; */
         font-weight: bold;
     }
 
     .Comments-users span {
         font-size: 14px;
         margin: 0 0 0 0.5em;
-        color: rgba(black, 0.9);
+        /* color: rgba(black, 0.9); */
         font-weight: normal;
     }
 
