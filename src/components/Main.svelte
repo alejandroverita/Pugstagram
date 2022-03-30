@@ -7,15 +7,18 @@
 
     .Main-container{
         display: grid;
-        grid-template-columns: 3fr 1fr;
-        grid-gap: 2em;
+        grid-template-columns: minmax(auto, 642px) minmax(auto, 293px);
+        grid-gap: 28px;
         padding: 2em 0;
+        grid-template-areas: "timeline stories"
     }
 
     @media(max-width: 999px){
         .Main-container{
             grid-template: auto 1fr / 1fr;
-            
+            grid-template-areas:
+                "stories"
+                "timeline";
         }
     }
 

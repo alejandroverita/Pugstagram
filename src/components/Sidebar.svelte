@@ -11,6 +11,7 @@
     #Sidebar{
         position: relative;
         padding: 4.5em 0 0 0;
+        grid-area: stories;
     }
 
     .Sidebar-container {

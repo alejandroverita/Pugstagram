@@ -37,8 +37,8 @@
     }
 
     :global(body){
-        background-color: #fafafa;
-        color: var(--gray-alpha-80);
+        background-color: var(--light-theme-body-background);
+        /* color: var(--gray-alpha-80); */
         font-family: "Lato", sans-serif;
         margin: 0;
         padding: 0;
