@@ -9,7 +9,7 @@
         display: grid;
         grid-template-columns: minmax(auto, 642px) minmax(auto, 293px);
         grid-gap: 28px;
-        padding: 2em 0;
+        padding: 100px 0;
         grid-template-areas: "timeline stories"
     }
 

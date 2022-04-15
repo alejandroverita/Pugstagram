@@ -1,12 +1,20 @@
 <script>
     import { likeCount } from '../store/store';
-    import {isDarkMode} from "../store/store";
+    import { isDarkMode } from "../store/store";
 </script>
 <style>
-    #Header{
+    .Header{
+        background-color: var(--white-color);
         position: fixed;
         width: 100%;
+        height: 53px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: none;
         z-index: 1;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--gray-alpha-80);
     }
 
     .header-dark{
@@ -18,8 +26,9 @@
         display: grid;
         grid-template-columns: minmax(auto, 936px);
         justify-content: center;
-        border-bottom: 1px solid var(--gray-alpha-80);
-        outline: none;
+        align-items: center;
+        /* padding: 0 20px; */
+        
     }
 
     .Header-content {
@@ -70,7 +79,7 @@
     
 </style>
 
-<div id="Header" class:header-dark={$isDarkMode}>
+<div class="Header" class:header-dark={$isDarkMode}>
     <div class="Header-container">
         <div class="Header-content">
             <div class="Header-logo">

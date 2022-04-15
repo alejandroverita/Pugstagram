@@ -1,10 +1,10 @@
 <script>
-    import { onMount } from "svelte";
     import Header from '../components/Header.svelte';
     import Main from '../components/Main.svelte';
     import TimeLine from '../components/TimeLine.svelte';
     import Sidebar from '../components/Sidebar.svelte';
-
+    
+    import { onMount } from "svelte";
     import { isDarkMode } from "../store/store";
 
     let data = {};
@@ -43,6 +43,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        transition: 0.3s ease;
     }
 
     :global(h1, h2, h3){
