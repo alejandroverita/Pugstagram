@@ -43,12 +43,12 @@
     }
 
     .Comments-add {
-        padding: 1em 1em 1em 1em;
         border-top: 1px solid rgba(219, 219, 219, 0.8);
     }
-
+    
     .Comments-add form {
         display: flex;
+        padding: 1em 1em 1em 1em;
         justify-content: space-between;
         align-items: center;
     }
@@ -61,13 +61,14 @@
         font-size: 12px;
         outline: none;
         width: 100%;
-        padding: 0.5em 0 0.5em 0.5em;
+        padding: 1em 0 1em 0.5em;
     }
 
     .Comments-add button {
         border: none;
         color: #3897f0;
         font-size: 12px;
+        font-weight: 700;
         outline: none;
         cursor: pointer;
         background-color: transparent;
