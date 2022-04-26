@@ -1,6 +1,7 @@
 <script>
     import { likeCount } from '../store/store';
     import { isDarkMode } from "../store/store";
+    export let segment;
 </script>
 <style>
     .Header{
@@ -76,6 +77,10 @@
         top: 0;
         left: 0;
     }
+
+    [aria-current] i {
+        color: #bc1888;
+    }
     
 </style>
 
@@ -93,7 +98,9 @@
                         {$likeCount === 0 ? '' : $likeCount}
                     </li>
                     <li>
-                        <i class="fa-solid fa-user"/>
+                        <a aria-current={segment === 'profile' ? 'page' : undefined } href='profile'>
+                            <i class="fa-solid fa-user"/>
+                        </a>
                     </li>
                 </ul>
             </div>
