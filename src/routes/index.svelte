@@ -1,5 +1,4 @@
 <script>
-    import Header from '../components/Header.svelte';
     import Main from '../components/Main.svelte';
     import TimeLine from '../components/TimeLine.svelte';
     import Sidebar from '../components/Sidebar.svelte';
@@ -23,8 +22,10 @@
 
 </script>
 
-<Header />
+
 <Main>
     <TimeLine posts = { data.posts} />
-    <Sidebar {...data.user}/>
+    {#if data.user}
+        <Sidebar {...data.user}/>
+    {/if}
 </Main>
