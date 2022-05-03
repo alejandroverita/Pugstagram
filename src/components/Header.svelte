@@ -1,7 +1,12 @@
 <script>
+    import {goto} from "@sapper/app";
     import { likeCount } from '../store/store';
     import { isDarkMode } from "../store/store";
     export let segment;
+
+    const navigateHome = async () => {
+        await goto('/')
+    };
 </script>
 <style>
     .Header{
@@ -88,7 +93,7 @@
     <div class="Header-container">
         <div class="Header-content">
             <div class="Header-logo">
-                <h1 class="Header-logo-text">Pugstagram</h1>
+                <h1 on:click= {navigateHome} class="Header-logo-text">Pugstagram</h1>
             </div>
 
             <div class="Header-nav">
@@ -98,7 +103,10 @@
                         {$likeCount === 0 ? '' : $likeCount}
                     </li>
                     <li>
-                        <a aria-current={segment === 'profile' ? 'page' : undefined } href='profile'>
+                        <a 
+                        aria-current={segment === 'profile' ? 'page' : undefined } href='profile'
+                        rel="prefetch"
+                        >
                             <i class="fa-solid fa-user"/>
                         </a>
                     </li>
