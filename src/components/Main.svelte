@@ -1,3 +1,20 @@
+<!-- <script>
+    import { isDarkMode } from "../store/store";
+    import {onMount} from 'svelte';
+
+    onMount(()=> {
+
+        let addClassList = document.body.classList.add("dark")
+        let removeClassList = document.body.classList.remove("dark")
+
+        isDarkMode.subscribe(value => {
+            value 
+                ? addClassList
+                : removeClassList
+        });
+    });
+</script> -->
+
 <style>
     #Main {
         display: grid;

@@ -8,11 +8,11 @@
 
     import {likeCount} from '../store/store';
 
-    export let username, location, photo, postComment, comments, avatar;
+    export let username, location, photo, postComment, comments, avatar, like, bookmark;
 
     let isModal = false;
-    let like = false;
-    let bookmark = false;
+    // let like = false;
+    // let bookmark = false;
 
     function handleClick () {
         isModal = !isModal;
